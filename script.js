@@ -2,10 +2,28 @@ const btns=document.querySelectorAll('button');
 const display=document.querySelector('#display');
 
 console.log(btns);
+
+btns.forEach(button=>{
+    
+    button.addEventListener('mouseover', ()=>{
+        button.classList.add('darker');
+    })
+    button.addEventListener('mouseout', ()=>{
+        button.classList.remove('darker');
+    })
+    button.addEventListener('mousedown', ()=>{
+        button.classList.remove('darker');
+        button.classList.add('lighter');
+    })
+    button.addEventListener('mouseup', ()=>{
+        button.classList.remove('lighter');
+    })
+})
 btns.forEach(button=>{
     button.addEventListener('click', ()=>{
         let btnid=button.getAttribute('id');
         let btnclass=button.getAttribute('class');
+        //button.classList.add('darker');
         sensor(btnid, btnclass);
 
     })
