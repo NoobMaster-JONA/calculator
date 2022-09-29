@@ -27,6 +27,14 @@ body{
     width: 100%;
 }
 
+#row1{
+    display: flex;
+    justify-content: space-between;
+}
+.special{
+    
+    width:49.5%;
+}
 .row{
     height: 20%;
 }
