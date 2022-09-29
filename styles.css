@@ -30,6 +30,12 @@ body{
 .row{
     height: 20%;
 }
+
+#display{
+    font-size: 450%;
+    font-weight: bolder;
+    text-align: end;
+}
 #buttons{
     height: 82%;
     padding: 0;
@@ -42,6 +48,7 @@ body{
 button{
     height: 100%;
     width: 24.2%;
+    border-radius: 7%;
     text-align: center;
     font-size: x-large;
     font-weight: bold;
